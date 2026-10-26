@@ -5,6 +5,119 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sana Bir Oyunum Var</title>
 <style>
+  
+/* Telefon ve küçük ekranlar için düzenleme */
+@media (max-width: 600px) {
+  body {
+    padding: 12px 10px 32px;
+    overflow-wrap: anywhere;
+  }
+
+  main {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: clamp(24px, 7vw, 32px);
+    line-height: 1.25;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .card {
+    padding: 12px;
+    margin: 12px 0;
+    min-width: 0;
+  }
+
+  .msg {
+    gap: 8px 12px;
+  }
+
+  .ch {
+    min-width: 25px;
+  }
+
+  .ch .l {
+    font-size: 17px;
+  }
+
+  .ch .n {
+    font-size: 16px;
+  }
+
+  .alpha {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 6px;
+  }
+
+  .cell {
+    min-width: 0;
+    padding: 6px;
+    gap: 4px;
+    font-size: 14px;
+  }
+
+  .cell b {
+    font-size: 16px;
+    min-width: 16px;
+  }
+
+  .cell input {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .lock {
+    gap: 8px;
+  }
+
+  .lock input {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .lock button {
+    width: 100%;
+  }
+
+  .sd {
+    width: 100%;
+    max-width: 432px;
+  }
+
+  .sd td {
+    font-size: clamp(14px, 4.5vw, 21px);
+  }
+
+  .pad {
+    width: 100%;
+    gap: 5px;
+  }
+
+  .pad button {
+    padding: 12px 0;
+    min-width: 0;
+  }
+
+  #lines {
+    font-size: 17px;
+    overflow-wrap: anywhere;
+  }
+
+  button,
+  a.btn {
+    min-height: 44px;
+  }
+
+  audio {
+    max-width: 100%;
+  }
+}
+
 :root{
   --bg:#f1eefb; --paper:#fffefd; --ink:#2a2760; --muted:#7a77a3; --line:#cfc9ea;
   --accent:#d6336c; --blue:#bfdcff; --ok:#1f8f5f; --bad:#d6336c; --sel:#ffe3ee;
